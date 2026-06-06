@@ -1,0 +1,23 @@
+[
+  { "name": "Diploma in Cloud Engineering (Level 7)", "issuer": "Yoobee College of Creative Innovation", "category": "education", "issued": "2026-04", "in_progress": false, "verify_url": null },
+  { "name": "Computer Science (Year 1)", "issuer": "Massey University", "category": "education", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "Certificate in Information Technology (Level 5)", "issuer": "Whitecliffe – Technology & Innovation", "category": "education", "issued": "2023", "in_progress": false, "verify_url": null },
+  { "name": "AWS Fundamentals Specialization", "issuer": "Amazon Web Services", "category": "cloud", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "AWS Academy Cloud Operations", "issuer": "Amazon Web Services", "category": "cloud", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "Azure AI Fundamentals (AI-900)", "issuer": "Microsoft", "category": "cloud", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Microsoft 365 Fundamentals", "issuer": "Microsoft", "category": "cloud", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Azure Solutions Architect Expert (AZ-305)", "issuer": "Microsoft", "category": "cloud", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Generative AI for Data Scientists Specialization", "issuer": "IBM", "category": "ai", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Generative AI Fundamentals Specialization", "issuer": "IBM", "category": "ai", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "AI Developer Professional Certificate", "issuer": "IBM", "category": "ai", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Full Stack Software Developer Professional Certificate", "issuer": "IBM", "category": "software", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "AI Essentials", "issuer": "Google", "category": "ai", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "Introduction to Generative AI Learning Path", "issuer": "Google", "category": "ai", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "IT Support Professional Certificate", "issuer": "Google", "category": "support", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "Network Technician Career Path", "issuer": "Cisco", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "IT Support Basics", "issuer": "Cisco", "category": "support", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "Networking Devices & Initial Configuration", "issuer": "Cisco", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "Networking Solutions", "issuer": "Grandstream", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "UC Solutions", "issuer": "Grandstream", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
+  { "name": "CS50: Introduction to Programming with Python", "issuer": "Harvard Online", "category": "software", "issued": "2024", "in_progress": false, "verify_url": null }
+]

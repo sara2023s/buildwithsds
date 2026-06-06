@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --deep-space: #0A0A0A;
+  --neon-lime: #CCFF00;
+  --electric-azure: #007BFF;
+  --background: var(--deep-space);
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-deep-space: var(--deep-space);
+  --color-neon-lime: var(--neon-lime);
+  --color-electric-azure: var(--electric-azure);
+  --font-syne: var(--font-syne);
+  --font-inter: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--neon-lime);
+  color: var(--deep-space);
+}
+
+/* ── Glitch layers ───────────────────────────────── */
+@keyframes glitch-1 {
+  0%   { clip-path: polygon(0 5%,  100% 5%,  100% 20%, 0 20%); transform: translateX(-4px) skewX(-1deg); }
+  25%  { clip-path: polygon(0 40%, 100% 40%, 100% 55%, 0 55%); transform: translateX( 4px) skewX( 1deg); }
+  50%  { clip-path: polygon(0 65%, 100% 65%, 100% 75%, 0 75%); transform: translateX(-2px); }
+  75%  { clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%); transform: translateX( 2px) skewX(-1deg); }
+  100% { clip-path: polygon(0 5%,  100% 5%,  100% 20%, 0 20%); transform: translateX(-4px) skewX(-1deg); }
+}
+@keyframes glitch-2 {
+  0%   { clip-path: polygon(0 70%, 100% 70%, 100% 85%, 0 85%); transform: translateX( 4px); }
+  33%  { clip-path: polygon(0 30%, 100% 30%, 100% 48%, 0 48%); transform: translateX(-4px) skewX(1deg); }
+  66%  { clip-path: polygon(0 55%, 100% 55%, 100% 68%, 0 68%); transform: translateX( 2px); }
+  100% { clip-path: polygon(0 70%, 100% 70%, 100% 85%, 0 85%); transform: translateX( 4px); }
+}
+
+/* ── Scan line sweep ─────────────────────────────── */
+@keyframes scan-sweep {
+  0%   { transform: translateY(-4px); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* ── Terminal cursor blink ───────────────────────── */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Shimmer (used on borders / skeletons) ───────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ── Flicker (ambient glow) ──────────────────────── */
+@keyframes flicker {
+  0%,  89%, 91%, 93%, 95%, 100% { opacity: 1; }
+  90%  { opacity: 0.55; }
+  92%  { opacity: 0.80; }
+  94%  { opacity: 0.45; }
+}
+
+/* ── Dot grid pulse ──────────────────────────────── */
+@keyframes grid-drift {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.7; }
+}
+
+/* ── Border march (dashed running border) ────────── */
+@keyframes border-march {
+  to { stroke-dashoffset: -20; }
+}
+
+/* ── Card glow pulse ─────────────────────────────── */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(204,255,0,0.18), 0 0 18px rgba(204,255,0,0.06); }
+  50%       { box-shadow: 0 0 0 1px rgba(204,255,0,0.38), 0 0 36px rgba(204,255,0,0.12); }
+}
+
+/* ── Gentle float ────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+/* ── Text glow breathe ───────────────────────────── */
+@keyframes text-glow {
+  0%, 100% { text-shadow: 0 0 8px rgba(204,255,0,0.4); }
+  50%       { text-shadow: 0 0 24px rgba(204,255,0,0.8), 0 0 48px rgba(204,255,0,0.3); }
+}
+
+/* ── Utility classes ─────────────────────────────── */
+.animate-flicker       { animation: flicker 6s infinite; }
+.animate-cursor-blink  { animation: cursor-blink 1s step-end infinite; }
+.animate-glow-pulse    { animation: glow-pulse 3s ease-in-out infinite; }
+.animate-float         { animation: float 3.8s ease-in-out infinite; }
+.animate-text-glow     { animation: text-glow 2.8s ease-in-out infinite; }
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(204,255,0,0.15) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Tampermonkey CRM Userscript",
+    "description": "Custom browser automation for my Primo CRM workflow. Watches the DOM for specific page states using MutationObserver and automatically pre-fills fields, surfaces account history, and adds keyboard shortcuts the default UI doesn't have. Cuts repetitive data entry out of every support interaction and keeps me faster during live calls.",
+    "tech": ["Tampermonkey", "JavaScript", "MutationObserver"],
+    "url": null
+  },
+  {
+    "title": "Notion Knowledge Bases",
+    "description": "Three interconnected zero-to-hero study systems built while earning 21 certifications: Networking (OSI model through BGP, VLANs, OSPF, WireGuard), AI/ML (fundamentals through fine-tuning and RAG pipelines), and Software Dev (data structures, algorithms, system design). Roughly 400 cross-linked pages — a habit of building reference material I actually go back to.",
+    "tech": ["Notion", "~400 pages", "cross-linked"],
+    "url": null
+  },
+  {
+    "title": "CORE_LAB Dashboard",
+    "description": "Cyberpunk-styled kiosk dashboard wall-mounted on a Samsung A12 running Fully Kiosk Browser in fullscreen mode. Displays live network device status, Docker container health, NAS storage, uptime counters, and current weather. Built with plain HTML and CSS, served directly from the Synology NAS — no framework, no build step.",
+    "tech": ["HTML/CSS", "Fully Kiosk Browser", "Samsung A12"],
+    "url": null
+  },
+  {
+    "title": "Ghostfolio Self-Host",
+    "description": "Self-hosted investment portfolio tracker running in Docker on the Synology NAS. Tracks stocks, ETFs, and crypto with full historical performance charts. Accessible remotely through a Cloudflare Tunnel so no ports are exposed — and none of my brokerage data or account details ever touches a third-party server.",
+    "tech": ["Docker", "Synology DSM", "Cloudflare Tunnel"],
+    "url": null
+  },
+  {
+    "title": "The Dude Network Monitor",
+    "description": "MikroTik's The Dude deployed on a CHR VM running on the HP ProDesk. SNMP-polls every device across all five VLANs — routers, switch, NAS, APs, and IoT devices. Custom Slack webhook integration fires an alert within 90 seconds of any device going offline. Per-VLAN submaps give a visual topology of the whole network at a glance.",
+    "tech": ["MikroTik CHR", "SNMP", "Slack API"],
+    "url": null
+  }
+]

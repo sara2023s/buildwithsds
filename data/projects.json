@@ -1,0 +1,35 @@
+{
+  "jornada": {
+    "slug": "jornada",
+    "title": "Jornada de Insights",
+    "subtitle": "Brazilian Portuguese content platform for podcasts, videos, and eBooks",
+    "client": "Patricia",
+    "brand": "Build With SDS",
+    "year": "2025",
+    "live_url": "https://jornadadeinsights.com",
+    "github": null,
+    "tech": ["React", "Tailwind CSS", "Next.js", "PWA", "iOS web app meta", "Open Graph", "pt-BR", "responsive"]
+  },
+  "alana-ruakere": {
+    "slug": "alana-ruakere",
+    "title": "Alana Ruakere",
+    "subtitle": "Artist portfolio & e-commerce shop with Apple Pay and Google Pay",
+    "client": "Alana Ruakere",
+    "brand": "Build With SDS",
+    "year": "2025",
+    "live_url": "https://alanaruakere.art",
+    "github": null,
+    "tech": ["React", "Stripe", "Apple Pay", "Google Pay", "domain verification", "SEO", "responsive", "e-commerce"]
+  },
+  "homelab": {
+    "slug": "homelab",
+    "title": "The Homelab",
+    "subtitle": "Self-hosted network monitoring stack",
+    "client": "Personal project",
+    "brand": "Build With SDS",
+    "year": "2025–present",
+    "live_url": "https://nas.buildwithsds.com",
+    "github": "https://github.com/sara2023s/homelab",
+    "tech": ["MikroTik RouterOS", "The Dude", "SNMP", "Synology DSM", "Docker", "Home Assistant", "NUT", "EcoFlow", "Cloudflare", "Let's Encrypt", "Slack webhooks", "5 VLANs"]
+  }
+}

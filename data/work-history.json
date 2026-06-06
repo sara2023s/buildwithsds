@@ -1,0 +1,34 @@
+[
+  {
+    "start": "2025-07",
+    "end": null,
+    "role": "Customer Success Technician",
+    "company": "PrimoWireless Ltd",
+    "location": "New Plymouth",
+    "summary": "Level 2 technical support for residential and business Fibre, Fixed Wireless, and VoIP services across New Plymouth and the wider region. Diagnose and isolate faults across CPE hardware, ISP infrastructure, and the last mile. Run end-to-end provisioning for new service activations. Handle escalation management and maintain documentation of recurring fault patterns to improve first-call resolution."
+  },
+  {
+    "start": "2025-02",
+    "end": null,
+    "role": "Lead Full-Stack Developer (Contract)",
+    "company": "Appdoers Limited",
+    "location": null,
+    "summary": "Contract lead developer for an Auckland digital agency. Own the technical architecture and delivery for client projects — React frontends, Node.js and Firebase backends, authentication flows, relational database design, Stripe payment integration, serverless functions, and deployment pipelines. Single point of technical responsibility from scoping through to client handoff."
+  },
+  {
+    "start": "2025-01",
+    "end": null,
+    "role": "Founder & Lead Full-Stack Developer",
+    "company": "Build With SDS",
+    "location": null,
+    "summary": "Solo freelance studio for full-stack and e-commerce builds under my own brand. Two shipped production sites: Jornada de Insights (Brazilian Portuguese content platform — React, Next.js, PWA, pt-BR localisation) and Alana Ruakere (artist portfolio and shop — Stripe, Apple Pay, Google Pay). End-to-end ownership: scoping, design decisions, development, deployment, and ongoing support."
+  },
+  {
+    "start": "2023-11",
+    "end": "2025-07",
+    "role": "Technical Support Engineer",
+    "company": "Ourcloud",
+    "location": null,
+    "summary": "IT support and cloud migration work for SMBs across New Zealand. Microsoft 365 provisioning and tenant-to-tenant migrations, LAN/WAN network configuration, VoIP system installation and fault resolution, onsite and remote support. First role with real production network infrastructure — the foundation for everything I've built with MikroTik, VLANs, and self-hosted services since."
+  }
+]
