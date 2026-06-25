@@ -6,7 +6,7 @@ import { FadeUp, StaggerGrid, StaggerItem } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Homelab — CORE_LAB",
-  description: "VLAN-segmented homelab — MikroTik hAP ac² + Grandstream switch + Synology DS425+ + HP ProDesk + 3× TP-Link HX510 Wi-Fi 6E mesh. 5 VLANs, a dedicated lab segment with CCR1009 and 3× hAP ac², and a full Docker service stack. Built to study for MTCNA and CCNA.",
+  description: "VLAN-segmented homelab — MikroTik hAP ac² + Grandstream switch + Synology DS425+ + HP ProDesk + 3× TP-Link HX510 Wi-Fi 6E mesh. 5 VLANs, a dedicated lab segment with CCR1009 and 3× hAP ac², and a full Docker service stack. MTCNA certified. CCNA in progress.",
 };
 
 export default function HomelabPage() {
@@ -26,7 +26,7 @@ export default function HomelabPage() {
           </p>
           <p className="font-inter text-base text-[#6B6B6B] leading-relaxed max-w-2xl mb-8">
             A dedicated VLAN 40 lab segment runs a CCR1009 gateway and three hAP ac² routers for hands-on
-            OSPF, BGP, and WireGuard practice before the MTCNA (Jun 2026) and CCNA (Oct 2026) exams.
+            OSPF, BGP, and WireGuard practice. MTCNA certified — currently working toward CCNA.
           </p>
         </FadeUp>
 
@@ -55,7 +55,7 @@ export default function HomelabPage() {
             { label: "Synology DS425+", color: "#007BFF" },
             { label: "HP ProDesk i7", color: "#3ECF8E" },
             { label: "3× TP-Link HX510", color: "#F59E0B" },
-            { label: "MTCNA prep", color: "#99CC00" },
+            { label: "MTCNA", color: "#99CC00" },
             { label: "CCNA prep", color: "#99CC00" },
             { label: "WireGuard VPN", color: "#CCFF00" },
             { label: "Cloudflare Tunnel", color: "#F97066" },

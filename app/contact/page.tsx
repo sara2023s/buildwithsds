@@ -59,7 +59,7 @@ export default function ContactPage() {
               ].map(({ label, value, href }) => (
                 <StaggerItem key={label}>
                   <div className="font-mono text-[10px] text-[#6B6B6B] tracking-widest uppercase mb-1">{label}</div>
-                  <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className="font-mono text-xs text-[#F8F8F8] hover:text-[#CCFF00] transition-colors">
+                  <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className="font-mono text-xs text-[#F8F8F8] hover:text-[#CCFF00] transition-colors break-all">
                     {value}
                   </a>
                 </StaggerItem>

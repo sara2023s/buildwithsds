@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function JornadaPage() {
-  const tech = ["React", "Tailwind CSS", "Next.js", "PWA", "iOS web app meta", "Open Graph", "pt-BR localisation", "responsive design"];
+  const tech = ["React", "Tailwind CSS", "Next.js", "PWA", "iOS web app meta", "pt-BR localisation", "responsive design"];
   return (
     <main style={{ background: "#0A0A0A" }} className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 pt-28 pb-24">
@@ -64,11 +64,8 @@ export default function JornadaPage() {
           </div>
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">APPROACH</h2>
-            <p className="font-inter text-base text-[#6B6B6B] leading-relaxed mb-4">
-              Built a mobile-first content platform in React and Next.js with full Brazilian Portuguese localisation — not just translated labels, but content structured for pt-BR reading patterns and the right locale metadata for Google. The site is PWA-enabled so it installs to the home screen on Android and iOS, with Apple&apos;s iOS web app meta tags for a native-feeling install experience on iPhones.
-            </p>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              Open Graph and Twitter card metadata were set up so every shared episode link renders a clean card on WhatsApp, Instagram, and Facebook — important for a creator whose audience shares content in group chats. I structured the data layer so adding a new podcast episode or eBook is a config change, not a code change.
+              Built a mobile-first content platform in React and Next.js with full Brazilian Portuguese localisation — not just translated labels, but content structured for pt-BR reading patterns and the right locale metadata for Google. The site is PWA-enabled so it installs to the home screen on Android and iOS, with Apple&apos;s iOS web app meta tags for a native-feeling install experience on iPhones.
             </p>
           </div>
           <div>
@@ -77,11 +74,11 @@ export default function JornadaPage() {
               {[
                 ["Next.js + SSR", "Static generation for content pages means fast first load on mobile networks. Patricia's audience is largely on Brazilian mobile connections."],
                 ["PWA + iOS meta tags", "Two separate install paths — the Web App Manifest for Android and specific Apple meta tags for iOS. Both needed testing independently."],
-                ["pt-BR throughout", "Not just lang='pt-BR' on the HTML element — all aria labels, date formatting, Open Graph locale, and sitemap use Brazilian Portuguese conventions."],
+                ["pt-BR throughout", "Not just lang='pt-BR' on the HTML element — all aria labels, date formatting, and sitemap use Brazilian Portuguese conventions."],
                 ["Content-driven structure", "Podcasts, videos, and eBooks each have a typed data file. New content = editing JSON, not JSX."],
               ].map(([title, detail]) => (
-                <div key={title as string} className="flex gap-4">
-                  <span className="font-mono text-xs text-[#CCFF00] w-40 shrink-0 pt-0.5">{title}</span>
+                <div key={title as string} className="flex flex-col sm:flex-row gap-1 sm:gap-4">
+                  <span className="font-mono text-xs text-[#CCFF00] sm:w-44 sm:shrink-0 sm:pt-0.5">{title}</span>
                   <span className="font-inter text-sm text-[#6B6B6B] leading-relaxed">{detail}</span>
                 </div>
               ))}
@@ -96,7 +93,7 @@ export default function JornadaPage() {
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">WHAT I OWNED</h2>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              End-to-end under Build With SDS. Initial scoping call, design decisions, all frontend development, PWA configuration, SEO and Open Graph setup, deployment pipeline, and ongoing support. Patricia&apos;s first dedicated platform — built to grow with her.
+              Owned fully as sole developer, delivered under Appdoers Limited. Initial scoping call, design decisions, all frontend development, PWA configuration, SEO, deployment pipeline, and ongoing support. Patricia&apos;s first dedicated platform — built to grow with her.
             </p>
           </div>
         </div>

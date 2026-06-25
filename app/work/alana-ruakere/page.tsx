@@ -5,11 +5,11 @@ import { FadeUp } from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Alana Ruakere — case study",
-  description: "Artist portfolio and e-commerce shop with Apple Pay and Google Pay integration.",
+  description: "Artist portfolio and e-commerce shop with Google Pay integration.",
 };
 
 export default function AlanaPage() {
-  const tech = ["React", "Stripe", "Apple Pay", "Google Pay", "domain verification", "SEO", "responsive", "e-commerce", "image optimisation"];
+  const tech = ["React", "Stripe", "Google Pay", "domain verification", "SEO", "responsive", "e-commerce", "image optimisation"];
   return (
     <main style={{ background: "#0A0A0A" }} className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 pt-28 pb-24">
@@ -31,7 +31,7 @@ export default function AlanaPage() {
           <h1 className="font-syne text-4xl sm:text-5xl font-bold text-[#F8F8F8] mb-3">
             <GlitchText intensity="low">Alana Ruakere</GlitchText>
           </h1>
-          <p className="font-inter text-lg text-[#6B6B6B] mb-10">Artist portfolio & e-commerce shop with Apple Pay and Google Pay</p>
+          <p className="font-inter text-lg text-[#6B6B6B] mb-10">Artist portfolio & e-commerce shop with Google Pay</p>
         </FadeUp>
 
         {/* Meta */}
@@ -41,7 +41,7 @@ export default function AlanaPage() {
             ["ROLE", "Sole developer"],
             ["DURATION", "2025"],
             ["BRAND", "Build With SDS"],
-            ["STACK", "React · Stripe · Apple Pay · Google Pay"],
+            ["STACK", "React · Stripe · Google Pay"],
           ].map(([k, v]) => (
             <div key={k} className="col-span-2 sm:col-span-1 flex gap-4">
               <span className="font-mono text-[10px] text-[#6B6B6B] tracking-widest uppercase w-24 shrink-0 pt-0.5">{k}</span>
@@ -65,18 +65,17 @@ export default function AlanaPage() {
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">APPROACH</h2>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed mb-4">
-              Built a custom React portfolio and shop. The design leads with full-bleed imagery — artwork as the centrepiece, not as a product card with a price badge. Stripe handles the payment backend, with Apple Pay and Google Pay wired in through the Payment Request API so mobile buyers can check out in one tap without entering card details.
+              Built a custom React portfolio and shop. The design leads with full-bleed imagery — artwork as the centrepiece, not as a product card with a price badge. Stripe handles the payment backend, with Google Pay wired in through the Payment Request API so mobile buyers can check out in one tap without entering card details.
             </p>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              Apple Pay domain verification required registering a domain association file with Stripe and hosting it at the right path — a step most developers skip and then wonder why Apple Pay doesn&apos;t show up on Safari. Google Pay had its own merchant registration flow. Both were fully tested across devices before shipping. SEO metadata targets Alana&apos;s name and specific artwork titles so she surfaces in image searches.
+              Google Pay required its own merchant registration flow — fully tested across devices before shipping. SEO metadata targets Alana&apos;s name and specific artwork titles so she surfaces in image searches.
             </p>
           </div>
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">TECHNICAL DECISIONS</h2>
             <div className="space-y-4">
               {[
-                ["Stripe + Payment Request API", "Single integration that surfaces Apple Pay on Safari/iOS, Google Pay on Chrome/Android, and falls back to card for everything else."],
-                ["Apple Pay domain verification", "Domain association file hosted at /.well-known/apple-developer-merchantid-domain-association. Without this, Apple Pay silently refuses to appear."],
+                ["Stripe + Google Pay", "Payment Request API integration surfaces Google Pay on Chrome/Android and falls back to standard card for everything else."],
                 ["Image-first layout", "Artwork images are the entire above-the-fold experience. Lazy loading and WebP with AVIF fallback keeps paint time fast despite large files."],
                 ["Zero platform fees", "No Shopify, no Squarespace, no marketplace cut. Alana pays Stripe's standard transaction fee and nothing else."],
               ].map(([title, detail]) => (
@@ -90,13 +89,13 @@ export default function AlanaPage() {
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">RESULT</h2>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              Live at alanaruakere.art. Original artworks and prints available for direct purchase. Apple Pay and Google Pay both working across devices. No monthly fees, no algorithm, no platform dependency — Alana owns her storefront and her customer relationships.
+              Live at alanaruakere.art. Original artworks and prints available for direct purchase. Google Pay working across devices. No monthly fees, no algorithm, no platform dependency — Alana owns her storefront and her customer relationships.
             </p>
           </div>
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">WHAT I OWNED</h2>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              End-to-end under Build With SDS. Scoping, visual direction, React development, Stripe integration, Apple Pay and Google Pay setup, domain association configuration, SEO metadata, deployment, and ongoing support.
+              End-to-end under Build With SDS. Scoping, visual direction, React development, Stripe integration, Google Pay setup, SEO metadata, deployment, and ongoing support.
             </p>
           </div>
         </div>

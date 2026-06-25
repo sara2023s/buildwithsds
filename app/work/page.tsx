@@ -7,7 +7,7 @@ import { FadeUp, FadeIn, StaggerGrid, StaggerItem } from "@/components/ScrollRev
 
 export const metadata: Metadata = {
   title: "Work — Dev Portfolio",
-  description: "Three client websites, five live personal apps, and five side tools. React, Next.js, Stripe, Apple Pay, PWA, auth — built and shipped.",
+  description: "Three client websites, five live personal apps, and four side tools. React, Next.js, Stripe, Google Pay, PWA, auth — built and shipped.",
 };
 
 const PERSONAL_BUILDS = [
@@ -70,7 +70,7 @@ export default function WorkPage() {
           </h1>
           <p className="font-inter text-base text-[#6B6B6B] leading-relaxed max-w-2xl mb-16">
             Three client builds shipped to real users, five live personal apps, and five
-            side tools I build and live with. React, Next.js, Stripe, Apple Pay, auth, payments.
+            side tools I build and live with. React, Next.js, Stripe, Google Pay, auth, payments.
             Also see the{" "}
             <Link href="/homelab" className="text-[#CCFF00] hover:underline underline-offset-4">
               homelab
@@ -99,8 +99,8 @@ export default function WorkPage() {
             <WorkCard
               slug="alana-ruakere"
               title="Alana Ruakere"
-              subtitle="Artist portfolio & e-commerce shop with Apple Pay and Google Pay"
-              tech={["React", "Stripe", "Apple Pay", "Google Pay", "e-commerce"]}
+              subtitle="Artist portfolio & e-commerce shop with Google Pay"
+              tech={["React", "Stripe", "Google Pay", "e-commerce"]}
               href="/work/alana-ruakere"
               previewUrl="https://alanaruakere.art"
             />
@@ -163,7 +163,7 @@ export default function WorkPage() {
             Homelab / networking →
           </Link>
           <Link href="/certs" className="font-mono text-xs text-[#6B6B6B] hover:text-[#CCFF00] transition-colors">
-            21 certifications →
+            25 certifications →
           </Link>
           <Link href="/about" className="font-mono text-xs text-[#6B6B6B] hover:text-[#CCFF00] transition-colors">
             About me →

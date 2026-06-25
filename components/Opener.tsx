@@ -9,7 +9,7 @@ import MagneticButton from "@/components/MagneticButton";
 const STATUS_PHRASES = [
   "ISP support by day · shipping code by night",
   "MikroTik + React + AWS in production",
-  "21 certs · MTCNA · CCNA incoming",
+  "25 certs · MTCNA certified · CCNA incoming",
   "GMT+13 · online when London logs off",
 ];
 
@@ -162,8 +162,8 @@ export default function Opener() {
         >
           Customer Success Tech at PrimoWireless, troubleshooting Fibre, Wireless and VoIP by day.
           Lead full-stack developer on contract with Appdoers by night, shipping React and Node to real clients.
-          Level 7 Diploma in Cloud Engineering, 21 certs across AWS, Azure, IBM AI, Cisco.
-          MTCNA next month, CCNA after that. I&apos;m awake when London sleeps. I&apos;m not done.
+          Level 7 Diploma in Cloud Engineering, 25 certs across AWS, Azure, IBM AI, Cisco, MikroTik, Anthropic.
+          MTCNA certified. CCNA in active lab prep. I&apos;m awake when London sleeps. I&apos;m not done.
         </motion.p>
 
         {/* Stat badges */}
@@ -174,11 +174,11 @@ export default function Opener() {
           className="flex flex-wrap gap-3 mt-8"
         >
           <span className="animate-float font-mono text-xs bg-white/5 border border-white/10 text-[#CCFF00] px-3 py-1.5 rounded flex items-center gap-1.5" style={{ animationDelay: "0s" }}>
-            <CountUp to={21} duration={1200} />
+            <CountUp to={25} duration={1200} />
             <span className="text-[#F8F8F8]">certs</span>
           </span>
           <span className="animate-float font-mono text-xs bg-white/5 border border-white/10 text-[#F8F8F8] px-3 py-1.5 rounded" style={{ animationDelay: "0.4s" }}>
-            MTCNA · Jun 2026
+            MTCNA certified
           </span>
           {lastPush !== null && (
             <span className="animate-float font-mono text-xs bg-white/5 border border-white/10 text-[#F8F8F8] px-3 py-1.5 rounded" style={{ animationDelay: "0.8s" }}>

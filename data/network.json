@@ -1,10 +1,10 @@
 {
   "nodes": [
-    { "id": "router", "label": "MikroTik hAP ac²", "ip": "192.168.20.1", "type": "gateway" },
-    { "id": "nas", "label": "Synology NAS", "ip": "192.168.20.213", "type": "storage", "hostname": "nas.buildwithsds.com", "live_status": true },
-    { "id": "pc", "label": "AdGuard / PC", "ip": "192.168.20.222", "type": "client" },
-    { "id": "probook", "label": "ProBook", "ip": "192.168.20.50", "type": "client" },
-    { "id": "iot", "label": "Echo / IoT", "ip": "192.168.30.x", "type": "iot" }
+    { "id": "router", "label": "MikroTik hAP ac²", "type": "gateway" },
+    { "id": "nas", "label": "Synology NAS", "type": "storage", "live_status": true },
+    { "id": "pc", "label": "AdGuard / PC", "type": "client" },
+    { "id": "probook", "label": "ProBook", "type": "client" },
+    { "id": "iot", "label": "Echo / IoT", "type": "iot" }
   ],
   "vlans": [
     { "id": 20, "label": "Main" },
@@ -12,7 +12,5 @@
     { "id": 40, "label": "Guest" },
     { "id": 50, "label": "Lab" },
     { "id": 99, "label": "Mgmt" }
-  ],
-  "public_ip": "43.231.192.231",
-  "domain": "buildwithsds.com"
+  ]
 }

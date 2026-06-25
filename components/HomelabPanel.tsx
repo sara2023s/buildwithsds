@@ -291,7 +291,7 @@ export default function HomelabPanel() {
               NAT rules <span className="flex-1 h-px bg-white/5" />
             </div>
             <div className="bg-[#0F0F0F] border border-white/5 rounded-lg divide-y divide-white/5">
-              {["srcnat masquerade — all outbound NATed to WAN IP", "dstnat TCP 32400 → ProDesk Plex"].map((r, i) => (
+              {["srcnat masquerade — all outbound NATed to WAN IP", "dstnat Plex port → ProDesk"].map((r, i) => (
                 <div key={i} className="flex items-start gap-3 px-4 py-2.5 font-mono text-xs text-[#6B6B6B]">
                   <span className="text-[#CCFF00]">→</span>{r}
                 </div>

@@ -7,7 +7,7 @@ import { FadeUp, FadeIn, BlurIn, StaggerGrid, StaggerItem } from "@/components/S
 
 export const metadata: Metadata = {
   title: "Certifications",
-  description: "21 certifications across AWS, Azure, IBM AI, Google, Cisco, Grandstream, Harvard. MTCNA and CCNA in progress.",
+  description: "25 certifications across AWS, Azure, IBM AI, Google, Cisco, MikroTik, Grandstream, Anthropic, Harvard. CCNA and Anthropic developer courses in progress.",
 };
 
 type Cert = {
@@ -18,11 +18,6 @@ type Cert = {
   in_progress: boolean;
   verify_url: string | null;
 };
-
-const HARDCODED_IN_PROGRESS = [
-  { name: "MTCNA", issuer: "MikroTik", category: "networking", issued: null, in_progress: true, verify_url: null, target_date: "Jun 2026" },
-  { name: "CCNA", issuer: "Cisco", category: "networking", issued: null, in_progress: true, verify_url: null, target_date: "Oct 2026" },
-];
 
 const CATEGORY_ORDER = ["education", "cloud", "ai", "networking", "support", "software"];
 const CATEGORY_LABELS: Record<string, string> = {
@@ -37,14 +32,13 @@ const CATEGORY_LABELS: Record<string, string> = {
 export default function CertsPage() {
   const allCerts = certsData as Cert[];
   const issuedCount = allCerts.filter((c) => !c.in_progress).length;
-  const inProgressCount = allCerts.filter((c) => c.in_progress).length + 2;
+  const inProgressCount = allCerts.filter((c) => c.in_progress).length;
 
-  const byCategory: Record<string, (Cert & { target_date?: string })[]> = {};
+  const byCategory: Record<string, Cert[]> = {};
   for (const cat of CATEGORY_ORDER) byCategory[cat] = [];
   for (const cert of allCerts) {
     if (byCategory[cert.category]) byCategory[cert.category].push(cert);
   }
-  byCategory["networking"].push(...HARDCODED_IN_PROGRESS);
 
   return (
     <main style={{ background: "#0A0A0A" }} className="min-h-screen">
@@ -65,7 +59,7 @@ export default function CertsPage() {
               Self-directed learning across cloud, AI, networking, and software — mostly built around things I was already doing. I don&apos;t collect badges; I study something until I can actually use it, then I find the cert that proves it.
             </p>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              Issuers: AWS, Microsoft, IBM, Google, Cisco, Grandstream, Harvard Online, Yoobee, Massey University, Whitecliffe. MTCNA (MikroTik) and CCNA (Cisco) both in active lab prep.
+              Issuers: AWS, Microsoft, IBM, Google, Cisco, MikroTik, Grandstream, Anthropic, Harvard Online, Yoobee, Massey University, Whitecliffe. CCNA in active lab prep.
             </p>
           </div>
         </FadeIn>
@@ -89,7 +83,6 @@ export default function CertsPage() {
                         in_progress={cert.in_progress}
                         verify_url={cert.verify_url}
                         category={cert.category}
-                        target_date={"target_date" in cert ? (cert as { target_date?: string }).target_date : undefined}
                       />
                     </StaggerItem>
                   ))}

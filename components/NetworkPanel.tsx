@@ -91,11 +91,11 @@ export default function NetworkPanel() {
 
       <div className="space-y-2">
         {[
-          { label: "MikroTik hAP ac²", ip: "192.168.20.1", role: "gateway", status: "—" },
-          { label: "Synology NAS", ip: "192.168.20.213 / nas.buildwithsds.com", role: "nas", status: nasStatus },
-          { label: "AdGuard/PC", ip: "192.168.20.222", role: "client", status: "—" },
-          { label: "ProBook", ip: "192.168.20.50", role: "client", status: "—" },
-          { label: "Echo/IoT", ip: "192.168.30.x", role: "iot", status: "—" },
+          { label: "MikroTik hAP ac²", ip: "VLAN 20 gateway", role: "gateway", status: "—" },
+          { label: "Synology NAS", ip: "VLAN 20", role: "nas", status: nasStatus },
+          { label: "AdGuard/PC", ip: "VLAN 20", role: "client", status: "—" },
+          { label: "ProBook", ip: "VLAN 20", role: "client", status: "—" },
+          { label: "Echo/IoT", ip: "VLAN 30", role: "iot", status: "—" },
         ].map((node) => (
           <div key={node.label} className="flex items-center justify-between py-1.5 border-b border-white/5 last:border-0">
             <div className="flex items-center gap-2">

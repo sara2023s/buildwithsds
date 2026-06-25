@@ -577,7 +577,7 @@ export default function HomelabNetworkMap() {
                 "Tapo L900 LED strip",
                 "Tapo temp/humidity",
                 "Echo Pop ×2",
-                "Samsung TV (Tizen)",
+                "Samsung TV",
                 "AC (via IR blaster)",
               ].map((d, i) => (
                 <text key={i} x="1143" y={356 + i * 17}
@@ -616,7 +616,7 @@ export default function HomelabNetworkMap() {
 
           {/* Four remote-access boxes */}
           {[
-            { x: 450,  cx: 560,  title: "Plex port forward",  sub: "TCP 32400 → ProDesk", color: "#99CC00", border: "#99CC00" },
+            { x: 450,  cx: 560,  title: "Plex port forward",  sub: "dstnat → ProDesk", color: "#99CC00", border: "#99CC00" },
             { x: 676,  cx: 786,  title: "Cloudflare tunnel",  sub: "HTTPS · NAS / ProDesk", color: "#99CC00", border: "#99CC00" },
             { x: 902,  cx: 1012, title: "The Dude (CHR VM)",  sub: "SNMP · Slack · Better Stack", color: "#99CC00", border: "#99CC00" },
             { x: 1128, cx: 1238, title: "AdGuard Home",       sub: "DNS blocking · all VLANs", color: "#7EEDB8", border: "rgba(62,207,142,0.3)" },

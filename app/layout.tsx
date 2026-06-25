@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s · Sara da Silva",
   },
   description:
-    "21 certs across AWS, Azure, IBM AI, Cisco. ISP support by day, shipping React and Node by night. Three client websites, five live apps. Open to Level 2 support, sysadmin, or full-stack engineering.",
+    "25 certs across AWS, Azure, IBM AI, Cisco, MikroTik, Anthropic. ISP support by day, shipping React and Node by night. Three client websites, five live apps. Open to Level 2 support, sysadmin, or full-stack engineering.",
   keywords: [
     "IT support",
     "full stack developer",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Build With SDS",
     title: "Sara da Silva — IT support engineer who builds",
     description:
-      "21 certs across AWS, Azure, IBM AI, Cisco. ISP support by day, shipping React and Node by night. Open to Level 2 support, sysadmin, or full-stack engineering.",
+      "25 certs across AWS, Azure, IBM AI, Cisco, MikroTik, Anthropic. ISP support by day, shipping React and Node by night. Open to Level 2 support, sysadmin, or full-stack engineering.",
     images: [
       {
         url: "/opengraph-image",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sara da Silva — IT support engineer who builds",
     description:
-      "21 certs across AWS, Azure, IBM AI, Cisco. ISP support by day, shipping React and Node by night. Open to Level 2 support, sysadmin, or full-stack engineering.",
+      "25 certs across AWS, Azure, IBM AI, Cisco, MikroTik, Anthropic. ISP support by day, shipping React and Node by night. Open to Level 2 support, sysadmin, or full-stack engineering.",
     images: ["/opengraph-image"],
     creator: "@sara2023s",
   },

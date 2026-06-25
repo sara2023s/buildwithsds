@@ -41,7 +41,7 @@ export default function Home() {
           <FadeIn delay={0.05}>
             <p className="font-inter text-sm text-[#6B6B6B] leading-relaxed max-w-xl mb-10">
               Three client websites shipped to real users, five live personal apps deployed at Build With SDS subdomains.
-              React, Next.js, Stripe, Apple Pay, PWA, auth — all built and maintained solo.
+              React, Next.js, Stripe, Google Pay, PWA, auth — all built and maintained solo.
             </p>
           </FadeIn>
 
@@ -60,8 +60,8 @@ export default function Home() {
               <WorkCard
                 slug="alana-ruakere"
                 title="Alana Ruakere"
-                subtitle="Artist portfolio & e-commerce · Apple Pay / Google Pay"
-                tech={["React", "Stripe", "Apple Pay", "e-commerce"]}
+                subtitle="Artist portfolio & e-commerce · Google Pay"
+                tech={["React", "Stripe", "Google Pay", "e-commerce"]}
                 href="/work/alana-ruakere"
                 previewUrl="https://alanaruakere.art"
               />
@@ -117,8 +117,8 @@ export default function Home() {
                 area: "Development",
                 color: "#3ECF8E",
                 icon: "{ }",
-                summary: "Full-stack from database to deploy. React and Next.js frontends, Node.js backends, Stripe payments including Apple Pay and Google Pay, Firebase, REST APIs.",
-                skills: ["React · Next.js", "Node.js", "TypeScript", "Stripe", "Apple / Google Pay", "Firebase", "SQL", "REST APIs"],
+                summary: "Full-stack from database to deploy. React and Next.js frontends, Node.js backends, Stripe payments including Google Pay, Firebase, REST APIs.",
+                skills: ["React · Next.js", "Node.js", "TypeScript", "Stripe", "Google Pay", "Firebase", "SQL", "REST APIs"],
                 delay: 0.08,
               },
               {
@@ -174,7 +174,7 @@ export default function Home() {
 
           <FadeIn delay={0.05}>
             <p className="font-inter text-sm text-[#6B6B6B] leading-relaxed max-w-xl mb-4">
-              VLAN-segmented production network with a dedicated VLAN 40 lab segment for MTCNA/CCNA prep.
+              VLAN-segmented production network with a dedicated VLAN 40 lab segment for CCNA prep.
               MikroTik routing, Grandstream switching, Synology NAS, full Docker stack on an HP ProDesk,
               3× TP-Link HX510 Wi-Fi 6E mesh.
             </p>
@@ -237,22 +237,22 @@ export default function Home() {
           <FadeUp className="mb-6">
             <span className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase">04 / CERTS</span>
             <h2 className="font-syne text-4xl sm:text-5xl font-bold text-[#F8F8F8] mt-3">
-              <GlitchText intensity="low">21 certs · 2 in progress</GlitchText>
+              <GlitchText intensity="low">25 certs · 6 in progress</GlitchText>
             </h2>
           </FadeUp>
 
           <FadeIn delay={0.03}>
             <p className="font-inter text-sm text-[#6B6B6B] leading-relaxed max-w-xl mb-8">
-              AWS, Microsoft Azure, IBM AI, Google, Cisco, Grandstream, Harvard — self-directed across
-              cloud, AI, networking, and software. MTCNA sitting Jun 2026, CCNA target Oct 2026.
+              AWS, Microsoft Azure, IBM AI, Google, Cisco, MikroTik, Anthropic, Grandstream, Harvard — self-directed across
+              cloud, AI, networking, and software. MTCNA certified. CCNA in progress.
             </p>
           </FadeIn>
 
           <StaggerGrid className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
             {[
               { label: "Cloud & Infra", to: 5, countStr: null, color: "#007BFF", issuers: "AWS · Microsoft" },
-              { label: "AI & ML", to: 5, countStr: null, color: "#FF6B35", issuers: "IBM · Google" },
-              { label: "Networking", to: null, countStr: "6 + 2 in progress", color: "#CCFF00", issuers: "Cisco · Grandstream · MikroTik" },
+              { label: "AI & ML", to: null, countStr: "8 + 5 in progress", color: "#FF6B35", issuers: "IBM · Google · Anthropic" },
+              { label: "Networking", to: null, countStr: "5 + 1 in progress", color: "#CCFF00", issuers: "Cisco · Grandstream · MikroTik" },
               { label: "Software Eng", to: 2, countStr: null, color: "#F59E0B", issuers: "IBM · Harvard" },
               { label: "IT Support", to: 2, countStr: null, color: "#3ECF8E", issuers: "Google · Cisco" },
               { label: "Education", to: 3, countStr: null, color: "#9B59B6", issuers: "Yoobee · Massey · Whitecliffe" },

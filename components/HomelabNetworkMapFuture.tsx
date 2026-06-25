@@ -210,7 +210,7 @@ export default function HomelabNetworkMap() {
             <rect x="450" y="378" width="196" height="80" rx="6" fill="rgba(0,123,255,0.03)" stroke="rgba(0,123,255,0.15)" strokeWidth="1"/>
             <text x="548" y="396" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#4B4B4B">SERVICES</text>
             <text x="548" y="412" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#A0A0A0">Cloudflare tunnel</text>
-            <text x="548" y="426" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#A0A0A0">nas.buildwithsds.com · SMB</text>
+            <text x="548" y="426" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#A0A0A0">NAS · SMB</text>
             <text x="548" y="440" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#A0A0A0">DSM · NUT UPS · Slack</text>
           </motion.g>
 
@@ -260,7 +260,7 @@ export default function HomelabNetworkMap() {
           <motion.g {...nf(0.5)} {...N("IoT devices · VLAN 30", "All isolated on VLAN 30 · Home Assistant controls via intra-VLAN rules · Frigate gets Tapo C211 RTSP stream · Blocked from Home, Lab, Mgmt VLANs · AdGuard filters DNS for all devices")}>
             <rect x="1046" y="316" width="190" height="246" rx="6" fill="rgba(249,112,102,0.04)" stroke="#F97066" strokeWidth="1"/>
             <text x="1141" y="336" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#4B4B4B">IOT · VLAN 30</text>
-            {["Tapo C211 camera","Tapo P110M plugs ×2","Tapo P110 plug ×1","Tapo L530 bulbs ×2","Tapo H110 hub + IR","Tapo L900 LED strip","Tapo temp/humidity","Echo Pop ×2","Samsung TV (Tizen)","AC (via IR blaster)"].map((d, i) => (
+            {["Tapo C211 camera","Tapo P110M plugs ×2","Tapo P110 plug ×1","Tapo L530 bulbs ×2","Tapo H110 hub + IR","Tapo L900 LED strip","Tapo temp/humidity","Echo Pop ×2","Samsung TV","AC (via IR blaster)"].map((d, i) => (
               <text key={i} x="1141" y={354 + i * 16} textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#FCA5A5">{d}</text>
             ))}
             <text x="1141" y="520" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#7F1D1D">blocked → Home/Lab/Mgmt</text>
@@ -279,8 +279,8 @@ export default function HomelabNetworkMap() {
           <rect x="450" y="620" width="1010" height="16" rx="3" fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1" strokeDasharray="4 3"/>
           <text x="955" y="631" textAnchor="middle" fontFamily="var(--font-mono)" fontSize="9" fill="#3A3A3A">REMOTE ACCESS</text>
           {[
-            { x: 450, cx: 560, title: "Plex port forward", sub: "TCP 32400 → ProDesk" },
-            { x: 686, cx: 796, title: "Cloudflare tunnel", sub: "nas.buildwithsds.com" },
+            { x: 450, cx: 560, title: "Plex port forward", sub: "dstnat → ProDesk" },
+            { x: 686, cx: 796, title: "Cloudflare tunnel", sub: "HTTPS · NAS / ProDesk" },
             { x: 922, cx: 1032, title: "The Dude (CHR VM)", sub: "SNMP · Slack · Better Stack" },
           ].map(({ x, cx, title, sub }, i) => (
             <motion.g key={title} {...nf(0.6 + i * 0.05)}>

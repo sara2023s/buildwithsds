@@ -10,7 +10,7 @@ import { FadeUp, FadeIn, SlideInLeft, ScaleIn, BlurIn, StaggerGrid, StaggerItem 
 
 export const metadata: Metadata = {
   title: "About",
-  description: "New Plymouth NZ. Customer Success Tech by day, full-stack developer by night. Level 7 Diploma in Cloud Engineering, 21 certs.",
+  description: "New Plymouth NZ. Customer Success Tech by day, full-stack developer by night. Level 7 Diploma in Cloud Engineering, 25 certs.",
 };
 
 export default function AboutPage() {
@@ -79,7 +79,7 @@ export default function AboutPage() {
           </SlideInLeft>
           <SlideInLeft delay={0.15}>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              I&apos;m halfway through a Level 7 Diploma in Cloud Engineering at Yoobee, sitting MTCNA in June 2026, and on track for CCNA after that. I run a VLAN-segmented homelab with a dedicated lab segment specifically for hands-on OSPF, BGP, and routing protocol practice — the kind of preparation that matters when the exam is real hardware, not Packet Tracer.
+              I hold a Level 7 Diploma in Cloud Engineering from Yoobee, and I&apos;m MTCNA certified. Currently working toward CCNA. I run a VLAN-segmented homelab with a dedicated lab segment specifically for hands-on OSPF, BGP, and routing protocol practice — the kind of preparation that matters when the exam is real hardware, not Packet Tracer.
             </p>
           </SlideInLeft>
           <SlideInLeft delay={0.2}>
@@ -96,9 +96,9 @@ export default function AboutPage() {
           </FadeUp>
           <StaggerGrid className="grid sm:grid-cols-2 gap-4">
             {[
-              { label: "MTCNA", detail: "Sitting Jun 2026 · active lab prep on CCR1009 + 3× hAP ac²", color: "#99CC00" },
-              { label: "CCNA", detail: "Target Oct 2026 · Cisco IOS in EVE-NG on the ProDesk", color: "#99CC00" },
-              { label: "Level 7 Cloud Engineering", detail: "Yoobee College · completing 2026 · AWS, Azure, architecture", color: "#007BFF" },
+              { label: "MTCNA", detail: "Certified Jun 2026 · MikroTik", color: "#99CC00" },
+              { label: "CCNA", detail: "In progress · Cisco IOS in EVE-NG on the ProDesk", color: "#99CC00" },
+              { label: "Level 7 Cloud Engineering", detail: "Yoobee College · completed Apr 2026 · AWS, Azure, architecture", color: "#007BFF" },
               { label: "Appdoers", detail: "Active contract · React, Node, Firebase client delivery", color: "#3ECF8E" },
             ].map(({ label, detail, color }) => (
               <StaggerItem key={label}>
@@ -205,7 +205,7 @@ export default function AboutPage() {
           </MagneticButton>
           <MagneticButton>
             <Link href="/certs" className="font-mono text-sm text-[#F8F8F8] border border-white/20 px-6 py-3 rounded hover:border-[#CCFF00]/50 hover:text-[#CCFF00] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CCFF00]">
-              21 certifications →
+              25 certifications →
             </Link>
           </MagneticButton>
         </div>

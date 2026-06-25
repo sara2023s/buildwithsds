@@ -18,24 +18,20 @@ export default function AppdoersPage() {
     <main style={{ background: "#0A0A0A" }} className="min-h-screen">
       <div className="max-w-4xl mx-auto px-6 pt-28 pb-24">
 
-        {/* Hero iframe */}
-        <div className="h-[400px] sm:h-[540px] bg-[#0F0F0F] border border-white/5 rounded-lg mb-10 overflow-hidden relative">
-          <iframe
-            src="https://www.appdoers.co.nz/"
-            title="Appdoers — live preview"
-            className="absolute top-0 left-0 border-0 pointer-events-none"
-            style={{ width: "160%", height: "160%", transform: "scale(0.625)", transformOrigin: "top left" }}
-            loading="lazy"
-            tabIndex={-1}
-          />
-          <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#0A0A0A]/70 to-transparent pointer-events-none" />
+        {/* Site preview */}
+        <div className="h-[400px] sm:h-[540px] bg-[#0F0F0F] border border-white/5 rounded-lg mb-10 overflow-hidden relative flex flex-col items-center justify-center gap-6">
+          <div className="text-center px-8">
+            <div className="font-mono text-[10px] text-[#6B6B6B] tracking-widest uppercase mb-3">LIVE SITE</div>
+            <div className="font-syne text-3xl sm:text-4xl font-bold text-[#F8F8F8] mb-2">appdoers.co.nz</div>
+            <div className="font-inter text-sm text-[#6B6B6B]">New Zealand digital development agency</div>
+          </div>
           <a
             href="https://www.appdoers.co.nz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute top-3 right-3 font-mono text-xs bg-black/60 text-[#CCFF00] border border-[#CCFF00]/30 px-3 py-1.5 rounded hover:bg-[#CCFF00]/10 transition-colors"
+            className="font-mono text-sm font-semibold text-[#0A0A0A] bg-[#CCFF00] px-6 py-3 rounded hover:bg-[#CCFF00]/90 transition-colors"
           >
-            ↗ appdoers.co.nz
+            Visit appdoers.co.nz ↗
           </a>
         </div>
 

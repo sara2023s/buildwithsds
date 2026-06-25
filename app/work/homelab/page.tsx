@@ -37,7 +37,7 @@ export default function HomelabWorkPage() {
             ["TYPE", "Personal infrastructure — ongoing"],
             ["ROLE", "Solo build, design, and operations"],
             ["STARTED", "2024 · live and expanding"],
-            ["PURPOSE", "MTCNA (Jun 2026) · CCNA (Oct 2026)"],
+            ["PURPOSE", "MTCNA certified · CCNA in progress"],
             ["UPTIME", "99.8% over 30 days"],
             ["STATUS", "Live · monitored · operational"],
           ].map(([k, v]) => (
@@ -53,7 +53,7 @@ export default function HomelabWorkPage() {
           <div>
             <h2 className="font-mono text-xs text-[#CCFF00] tracking-widest uppercase mb-4">PROBLEM</h2>
             <p className="font-inter text-base text-[#6B6B6B] leading-relaxed">
-              I&apos;m self-taught and pursuing MTCNA (Jun 2026) and CCNA (Oct 2026). Textbook study only takes you so far — the real test is whether you can configure a VLAN that doesn&apos;t break the internet, recover a router you&apos;ve locked yourself out of, and design a network that fails gracefully. I needed a lab I owned, with real consequences when something went wrong.
+              I&apos;m self-taught and pursuing MTCNA and CCNA — now MTCNA certified, CCNA in active lab prep. Textbook study only takes you so far — the real test is whether you can configure a VLAN that doesn&apos;t break the internet, recover a router you&apos;ve locked yourself out of, and design a network that fails gracefully. I needed a lab I owned, with real consequences when something went wrong.
             </p>
           </div>
           <div>

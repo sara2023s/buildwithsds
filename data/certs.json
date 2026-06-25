@@ -19,5 +19,15 @@
   { "name": "Networking Devices & Initial Configuration", "issuer": "Cisco", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
   { "name": "Networking Solutions", "issuer": "Grandstream", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
   { "name": "UC Solutions", "issuer": "Grandstream", "category": "networking", "issued": "2025", "in_progress": false, "verify_url": null },
-  { "name": "CS50: Introduction to Programming with Python", "issuer": "Harvard Online", "category": "software", "issued": "2024", "in_progress": false, "verify_url": null }
+  { "name": "CS50: Introduction to Programming with Python", "issuer": "Harvard Online", "category": "software", "issued": "2024", "in_progress": false, "verify_url": null },
+  { "name": "MTCNA", "issuer": "MikroTik", "category": "networking", "issued": "2026-06", "in_progress": false, "verify_url": null },
+  { "name": "Claude 101", "issuer": "Anthropic", "category": "ai", "issued": "2026-06", "in_progress": false, "verify_url": null },
+  { "name": "Claude Code 101", "issuer": "Anthropic", "category": "ai", "issued": "2026-06", "in_progress": false, "verify_url": null },
+  { "name": "Introduction to Claude Cowork", "issuer": "Anthropic", "category": "ai", "issued": "2026-06", "in_progress": false, "verify_url": null },
+  { "name": "CCNA", "issuer": "Cisco", "category": "networking", "issued": null, "in_progress": true, "verify_url": null },
+  { "name": "Claude Code in Action", "issuer": "Anthropic", "category": "ai", "issued": null, "in_progress": true, "verify_url": null },
+  { "name": "Building with the Claude API", "issuer": "Anthropic", "category": "ai", "issued": null, "in_progress": true, "verify_url": null },
+  { "name": "Model Context Protocol: Advanced Topics", "issuer": "Anthropic", "category": "ai", "issued": null, "in_progress": true, "verify_url": null },
+  { "name": "Introduction to subagents", "issuer": "Anthropic", "category": "ai", "issued": null, "in_progress": true, "verify_url": null },
+  { "name": "Introduction to Model Context Protocol", "issuer": "Anthropic", "category": "ai", "issued": null, "in_progress": true, "verify_url": null }
 ]
