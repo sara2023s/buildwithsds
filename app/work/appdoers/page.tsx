@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import GlitchText from "@/components/GlitchText";
 import { FadeUp, FadeIn, ScaleIn, SlideInLeft, StaggerGrid, StaggerItem } from "@/components/ScrollReveal";
 
@@ -19,17 +20,20 @@ export default function AppdoersPage() {
       <div className="max-w-4xl mx-auto px-6 pt-28 pb-24">
 
         {/* Site preview */}
-        <div className="h-[400px] sm:h-[540px] bg-[#0F0F0F] border border-white/5 rounded-lg mb-10 overflow-hidden relative flex flex-col items-center justify-center gap-6">
-          <div className="text-center px-8">
-            <div className="font-mono text-[10px] text-[#6B6B6B] tracking-widest uppercase mb-3">LIVE SITE</div>
-            <div className="font-syne text-3xl sm:text-4xl font-bold text-[#F8F8F8] mb-2">appdoers.co.nz</div>
-            <div className="font-inter text-sm text-[#6B6B6B]">New Zealand digital development agency</div>
-          </div>
+        <div className="h-[400px] sm:h-[540px] bg-[#0F0F0F] border border-white/5 rounded-lg mb-10 overflow-hidden relative group">
+          <Image
+            src="/preview-appdoers.jpg"
+            alt="Appdoers website screenshot"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/60 pointer-events-none" />
           <a
             href="https://www.appdoers.co.nz/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-sm font-semibold text-[#0A0A0A] bg-[#CCFF00] px-6 py-3 rounded hover:bg-[#CCFF00]/90 transition-colors"
+            className="absolute bottom-5 right-5 font-mono text-xs font-semibold text-[#0A0A0A] bg-[#CCFF00] px-4 py-2 rounded hover:bg-[#CCFF00]/90 transition-colors"
           >
             Visit appdoers.co.nz ↗
           </a>
