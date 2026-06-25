@@ -74,6 +74,7 @@ export default function Home() {
                 tech={["React", "Next.js", "TypeScript", "SEO"]}
                 href="/work/appdoers"
                 previewUrl="https://www.appdoers.co.nz/"
+                previewImage="/preview-appdoers.jpg"
               />
             </StaggerItem>
           </StaggerGrid>

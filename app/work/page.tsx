@@ -113,6 +113,7 @@ export default function WorkPage() {
               tech={["React", "Next.js", "TypeScript", "SEO", "Tailwind"]}
               href="/work/appdoers"
               previewUrl="https://www.appdoers.co.nz/"
+              previewImage="/preview-appdoers.jpg"
             />
           </StaggerItem>
         </StaggerGrid>

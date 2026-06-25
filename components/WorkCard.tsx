@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface WorkCardProps {
@@ -10,17 +11,30 @@ interface WorkCardProps {
   /** Internal path (e.g. /work/jornada) or full external URL */
   href: string;
   previewUrl?: string;
+  /** Static image path (e.g. /preview-appdoers.jpg) — takes precedence over iframe */
+  previewImage?: string;
 }
 
 const cardClass =
   "group block bg-[#0F0F0F] border border-white/5 rounded-lg overflow-hidden hover:border-[#CCFF00]/40 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#CCFF00]";
 
-function CardInner({ title, subtitle, tech, previewUrl }: Pick<WorkCardProps, "title" | "subtitle" | "tech" | "previewUrl">) {
+function CardInner({ title, subtitle, tech, previewUrl, previewImage }: Pick<WorkCardProps, "title" | "subtitle" | "tech" | "previewUrl" | "previewImage">) {
   return (
     <>
       {/* Preview area */}
       <div className="h-48 border-b border-white/5 relative overflow-hidden bg-[#111]">
-        {previewUrl ? (
+        {previewImage ? (
+          <>
+            <Image
+              src={previewImage}
+              alt={`${title} — site preview`}
+              fill
+              className="object-cover object-top pointer-events-none"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/50 pointer-events-none" />
+          </>
+        ) : previewUrl ? (
           <>
             <iframe
               src={previewUrl}
@@ -66,7 +80,7 @@ function CardInner({ title, subtitle, tech, previewUrl }: Pick<WorkCardProps, "t
   );
 }
 
-export default function WorkCard({ title, subtitle, tech, href, previewUrl }: WorkCardProps) {
+export default function WorkCard({ title, subtitle, tech, href, previewUrl, previewImage }: WorkCardProps) {
   const isExternal = href.startsWith("http");
 
   return (
@@ -81,11 +95,11 @@ export default function WorkCard({ title, subtitle, tech, href, previewUrl }: Wo
     >
       {isExternal ? (
         <a href={href} target="_blank" rel="noopener noreferrer" className={cardClass}>
-          <CardInner title={title} subtitle={subtitle} tech={tech} previewUrl={previewUrl} />
+          <CardInner title={title} subtitle={subtitle} tech={tech} previewUrl={previewUrl} previewImage={previewImage} />
         </a>
       ) : (
         <Link href={href} className={cardClass}>
-          <CardInner title={title} subtitle={subtitle} tech={tech} previewUrl={previewUrl} />
+          <CardInner title={title} subtitle={subtitle} tech={tech} previewUrl={previewUrl} previewImage={previewImage} />
         </Link>
       )}
     </motion.div>
