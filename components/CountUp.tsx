@@ -30,7 +30,7 @@ export default function CountUp({
 }: CountUpProps) {
   const [value, setValue] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref as React.RefObject<Element>, { once: true, margin: "-60px" });
+  const isInView = useInView(ref as React.RefObject<Element>, { once: true, margin: "0px" });
   const rafRef = useRef<number>(0);
   const startRef = useRef<number | null>(null);
 
